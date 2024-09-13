@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule bowtie_build in file /Users/flg9/Desktop/Developer/grubaugh_lab/snakemake_workflows/GitHub/PGCOE_Bacseq/pipelines/make_pangenome/3_primer_alignment/primer_aln.smk, line 52:
+Missing input files for rule bowtie_build:
+    output: results/TB/primer_aln/bowtie_index/ERR025455/ERR025455_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR025455/ERR025455_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR025455/ERR025455_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR025455/ERR025455_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR025455/ERR025455_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR025455/ERR025455_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=ERR025455
+    affected files:
+        seqs/TB_reps/ERR025455.fa

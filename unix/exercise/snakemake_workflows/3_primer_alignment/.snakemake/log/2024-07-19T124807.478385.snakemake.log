@@ -1,0 +1,1171 @@
+Building DAG of jobs...
+Creating conda environment envs/read_aln.yaml...
+Downloading and installing remote packages.
+Environment for /Users/flg9/Desktop/Developer/grubaugh_lab/snakemake_workflows/GitHub/PGCOE_Bacseq/pipelines/make_pangenome/3_primer_alignment/envs/read_aln.yaml created (location: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_)
+Creating conda environment envs/biopython.yaml...
+Downloading and installing remote packages.
+Environment for /Users/flg9/Desktop/Developer/grubaugh_lab/snakemake_workflows/GitHub/PGCOE_Bacseq/pipelines/make_pangenome/3_primer_alignment/envs/biopython.yaml created (location: .snakemake/conda/169d717fd52820752328de356ba48fa2_)
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+bowtie_align        76
+bowtie_build        76
+fwd_rev_depth       76
+get_fasta            1
+split_bed            1
+total              231
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:22 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR275205.fa
+    output: results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR275205_bowtie_build.log
+    jobid: 58
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR275205/ERR275205_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=ERR275205
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:50:38 2024]
+Finished job 58.
+1 of 231 steps (0.4%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:39 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1175079.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1175079_bowtie_build.log
+    jobid: 60
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1175079/SRR1175079_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=SRR1175079
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:50:41 2024]
+Finished job 60.
+2 of 231 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:41 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR553116.fa
+    output: results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR553116_bowtie_build.log
+    jobid: 5
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR553116/ERR553116_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=ERR553116
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:50:43 2024]
+Finished job 5.
+3 of 231 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:43 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1003103.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1003103_bowtie_build.log
+    jobid: 29
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1003103/SRR1003103_indexed_ref.3.bt2
+    wildcards: genera=TB, sample=SRR1003103
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:50:45 2024]
+Finished job 29.
+4 of 231 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:45 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR161044.fa
+    output: results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR161044_bowtie_build.log
+    jobid: 37
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR161044/ERR161044_indexed_ref.2.bt2
+    wildcards: genera=TB, sample=ERR161044
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:50:47 2024]
+Finished job 37.
+5 of 231 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:47 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR176752.fa
+    output: results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR176752_bowtie_build.log
+    jobid: 52
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR176752/ERR176752_indexed_ref.rev.1.bt2
+    wildcards: genera=TB, sample=ERR176752
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:50:50 2024]
+Finished job 52.
+6 of 231 steps (3%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:50 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR551636.fa
+    output: results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR551636_bowtie_build.log
+    jobid: 68
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR551636/ERR551636_indexed_ref.3.bt2
+    wildcards: genera=TB, sample=ERR551636
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:50:52 2024]
+Finished job 68.
+7 of 231 steps (3%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:52 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1172044.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1172044_bowtie_build.log
+    jobid: 21
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1172044/SRR1172044_indexed_ref.rev.1.bt2
+    wildcards: genera=TB, sample=SRR1172044
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:50:54 2024]
+Finished job 21.
+8 of 231 steps (3%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:54 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR234176.fa
+    output: results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR234176_bowtie_build.log
+    jobid: 14
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234176/ERR234176_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=ERR234176
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:50:56 2024]
+Finished job 14.
+9 of 231 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:56 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR234262.fa
+    output: results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR234262_bowtie_build.log
+    jobid: 48
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234262/ERR234262_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=ERR234262
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:50:58 2024]
+Finished job 48.
+10 of 231 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:50:58 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1172130.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1172130_bowtie_build.log
+    jobid: 25
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172130/SRR1172130_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=SRR1172130
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:00 2024]
+Finished job 25.
+11 of 231 steps (5%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:00 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1163294.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1163294_bowtie_build.log
+    jobid: 77
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1163294/SRR1163294_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=SRR1163294
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:03 2024]
+Finished job 77.
+12 of 231 steps (5%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:03 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR671749.fa
+    output: results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR671749_bowtie_build.log
+    jobid: 22
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR671749/SRR671749_indexed_ref.2.bt2
+    wildcards: genera=TB, sample=SRR671749
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:05 2024]
+Finished job 22.
+13 of 231 steps (6%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:05 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1173445.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1173445_bowtie_build.log
+    jobid: 45
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173445/SRR1173445_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=SRR1173445
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:07 2024]
+Finished job 45.
+14 of 231 steps (6%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:07 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR234263.fa
+    output: results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR234263_bowtie_build.log
+    jobid: 53
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234263/ERR234263_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=ERR234263
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:09 2024]
+Finished job 53.
+15 of 231 steps (6%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:09 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR552787.fa
+    output: results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR552787_bowtie_build.log
+    jobid: 76
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR552787/ERR552787_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=ERR552787
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:12 2024]
+Finished job 76.
+16 of 231 steps (7%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:12 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1172231.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1172231_bowtie_build.log
+    jobid: 30
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1172231/SRR1172231_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=SRR1172231
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:14 2024]
+Finished job 30.
+17 of 231 steps (7%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:14 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1019139.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1019139_bowtie_build.log
+    jobid: 44
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1019139/SRR1019139_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=SRR1019139
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:16 2024]
+Finished job 44.
+18 of 231 steps (8%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:16 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR847799.fa
+    output: results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR847799_bowtie_build.log
+    jobid: 61
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR847799/SRR847799_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=SRR847799
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:19 2024]
+Finished job 61.
+19 of 231 steps (8%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:19 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR108423.fa
+    output: results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR108423_bowtie_build.log
+    jobid: 13
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR108423/ERR108423_indexed_ref.3.bt2
+    wildcards: genera=TB, sample=ERR108423
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:21 2024]
+Finished job 13.
+20 of 231 steps (9%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:21 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1166201.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1166201_bowtie_build.log
+    jobid: 6
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1166201/SRR1166201_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=SRR1166201
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:23 2024]
+Finished job 6.
+21 of 231 steps (9%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:23 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR212105.fa
+    output: results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR212105_bowtie_build.log
+    jobid: 67
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR212105/ERR212105_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=ERR212105
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:25 2024]
+Finished job 67.
+22 of 231 steps (10%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:25 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR234256.fa
+    output: results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR234256_bowtie_build.log
+    jobid: 38
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234256/ERR234256_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=ERR234256
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:28 2024]
+Finished job 38.
+23 of 231 steps (10%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:28 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR671760.fa
+    output: results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR671760_bowtie_build.log
+    jobid: 36
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR671760/SRR671760_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=SRR671760
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:30 2024]
+Finished job 36.
+24 of 231 steps (10%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:30 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1146282.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1146282_bowtie_build.log
+    jobid: 69
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1146282/SRR1146282_indexed_ref.3.bt2
+    wildcards: genera=TB, sample=SRR1146282
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:32 2024]
+Finished job 69.
+25 of 231 steps (11%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:32 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR229952.fa
+    output: results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR229952_bowtie_build.log
+    jobid: 4
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR229952/ERR229952_indexed_ref.3.bt2
+    wildcards: genera=TB, sample=ERR229952
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:34 2024]
+Finished job 4.
+26 of 231 steps (11%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:34 2024]
+localrule bowtie_build:
+    input: seqs/TB/H37Rv.fa
+    output: results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/H37Rv.fasta_bowtie_build.log
+    jobid: 15
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/H37Rv.fasta/H37Rv.fasta_indexed_ref.rev.1.bt2
+    wildcards: genera=TB, sample=H37Rv.fasta
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:37 2024]
+Finished job 15.
+27 of 231 steps (12%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:37 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1140570.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1140570_bowtie_build.log
+    jobid: 59
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1140570/SRR1140570_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=SRR1140570
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:39 2024]
+Finished job 59.
+28 of 231 steps (12%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:39 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR671790.fa
+    output: results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR671790_bowtie_build.log
+    jobid: 46
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR671790/SRR671790_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=SRR671790
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:41 2024]
+Finished job 46.
+29 of 231 steps (13%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:41 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR234234.fa
+    output: results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR234234_bowtie_build.log
+    jobid: 28
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR234234/ERR234234_indexed_ref.rev.1.bt2
+    wildcards: genera=TB, sample=ERR234234
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:43 2024]
+Finished job 28.
+30 of 231 steps (13%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:43 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1182985.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1182985_bowtie_build.log
+    jobid: 78
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1182985/SRR1182985_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=SRR1182985
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:45 2024]
+Finished job 78.
+31 of 231 steps (13%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:45 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1184373.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1184373_bowtie_build.log
+    jobid: 17
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1184373/SRR1184373_indexed_ref.3.bt2
+    wildcards: genera=TB, sample=SRR1184373
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:48 2024]
+Finished job 17.
+32 of 231 steps (14%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:48 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR847778.fa
+    output: results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR847778_bowtie_build.log
+    jobid: 56
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR847778/SRR847778_indexed_ref.rev.1.bt2
+    wildcards: genera=TB, sample=SRR847778
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:50 2024]
+Finished job 56.
+33 of 231 steps (14%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:50 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1049733.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1049733_bowtie_build.log
+    jobid: 54
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1049733/SRR1049733_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=SRR1049733
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:52 2024]
+Finished job 54.
+34 of 231 steps (15%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:52 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR671753.fa
+    output: results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR671753_bowtie_build.log
+    jobid: 31
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR671753/SRR671753_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=SRR671753
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:54 2024]
+Finished job 31.
+35 of 231 steps (15%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:54 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR133985.fa
+    output: results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR133985_bowtie_build.log
+    jobid: 23
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR133985/ERR133985_indexed_ref.rev.1.bt2
+    wildcards: genera=TB, sample=ERR133985
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:57 2024]
+Finished job 23.
+36 of 231 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:57 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR181435.fa
+    output: results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR181435_bowtie_build.log
+    jobid: 62
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR181435/ERR181435_indexed_ref.2.bt2
+    wildcards: genera=TB, sample=ERR181435
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:51:59 2024]
+Finished job 62.
+37 of 231 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:51:59 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR833188.fa
+    output: results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR833188_bowtie_build.log
+    jobid: 51
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR833188/SRR833188_indexed_ref.rev.1.bt2
+    wildcards: genera=TB, sample=SRR833188
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:01 2024]
+Finished job 51.
+38 of 231 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:01 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1183039.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1183039_bowtie_build.log
+    jobid: 7
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1183039/SRR1183039_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=SRR1183039
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:04 2024]
+Finished job 7.
+39 of 231 steps (17%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:04 2024]
+localrule bowtie_build:
+    input: seqs/TB/NC_019950.fa
+    output: results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/NC_019950_bowtie_build.log
+    jobid: 20
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/NC_019950/NC_019950_indexed_ref.3.bt2
+    wildcards: genera=TB, sample=NC_019950
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:06 2024]
+Finished job 20.
+40 of 231 steps (17%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:06 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1013572.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1013572_bowtie_build.log
+    jobid: 39
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1013572/SRR1013572_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=SRR1013572
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:08 2024]
+Finished job 39.
+41 of 231 steps (18%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:08 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR228065.fa
+    output: results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR228065_bowtie_build.log
+    jobid: 75
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR228065/ERR228065_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=ERR228065
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:10 2024]
+Finished job 75.
+42 of 231 steps (18%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:10 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1180462.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1180462_bowtie_build.log
+    jobid: 70
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1180462/SRR1180462_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=SRR1180462
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:13 2024]
+Finished job 70.
+43 of 231 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:13 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR234257.fa
+    output: results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR234257_bowtie_build.log
+    jobid: 43
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234257/ERR234257_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=ERR234257
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:15 2024]
+Finished job 43.
+44 of 231 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:15 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1167069.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1167069_bowtie_build.log
+    jobid: 16
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1167069/SRR1167069_indexed_ref.rev.1.bt2
+    wildcards: genera=TB, sample=SRR1167069
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:17 2024]
+Finished job 16.
+45 of 231 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:18 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1183123.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1183123_bowtie_build.log
+    jobid: 12
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1183123/SRR1183123_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=SRR1183123
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:20 2024]
+Finished job 12.
+46 of 231 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:20 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR164005.fa
+    output: results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR164005_bowtie_build.log
+    jobid: 47
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR164005/ERR164005_indexed_ref.2.bt2
+    wildcards: genera=TB, sample=ERR164005
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:22 2024]
+Finished job 47.
+47 of 231 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:22 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR998654.fa
+    output: results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR998654_bowtie_build.log
+    jobid: 66
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR998654/SRR998654_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=SRR998654
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:24 2024]
+Finished job 66.
+48 of 231 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:24 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1049712.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1049712_bowtie_build.log
+    jobid: 49
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1049712/SRR1049712_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=SRR1049712
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:26 2024]
+Finished job 49.
+49 of 231 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:26 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR671751.fa
+    output: results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR671751_bowtie_build.log
+    jobid: 26
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR671751/SRR671751_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=SRR671751
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:28 2024]
+Finished job 26.
+50 of 231 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:28 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR176828.fa
+    output: results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR176828_bowtie_build.log
+    jobid: 57
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR176828/ERR176828_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=ERR176828
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:30 2024]
+Finished job 57.
+51 of 231 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:31 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1013560.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1013560_bowtie_build.log
+    jobid: 34
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1013560/SRR1013560_indexed_ref.2.bt2
+    wildcards: genera=TB, sample=SRR1013560
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:33 2024]
+Finished job 34.
+52 of 231 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:33 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1175134.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1175134_bowtie_build.log
+    jobid: 65
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1175134/SRR1175134_indexed_ref.2.bt2
+    wildcards: genera=TB, sample=SRR1175134
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:35 2024]
+Finished job 65.
+53 of 231 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:35 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1166327.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1166327_bowtie_build.log
+    jobid: 11
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1166327/SRR1166327_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=SRR1166327
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:38 2024]
+Finished job 11.
+54 of 231 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:38 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR163962.fa
+    output: results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR163962_bowtie_build.log
+    jobid: 42
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR163962/ERR163962_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=ERR163962
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:40 2024]
+Finished job 42.
+55 of 231 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:40 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1180491.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1180491_bowtie_build.log
+    jobid: 74
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1180491/SRR1180491_indexed_ref.rev.1.bt2
+    wildcards: genera=TB, sample=SRR1180491
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:42 2024]
+Finished job 74.
+56 of 231 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:42 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR234181.fa
+    output: results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR234181_bowtie_build.log
+    jobid: 19
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234181/ERR234181_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=ERR234181
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:45 2024]
+Finished job 19.
+57 of 231 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:45 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1173615.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1173615_bowtie_build.log
+    jobid: 50
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1173615/SRR1173615_indexed_ref.3.bt2
+    wildcards: genera=TB, sample=SRR1173615
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:47 2024]
+Finished job 50.
+58 of 231 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:47 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR137193.fa
+    output: results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR137193_bowtie_build.log
+    jobid: 27
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR137193/ERR137193_indexed_ref.rev.1.bt2
+    wildcards: genera=TB, sample=ERR137193
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:49 2024]
+Finished job 27.
+59 of 231 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:49 2024]
+localrule bowtie_build:
+    input: seqs/TB/H37Rv.fa
+    output: results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/H37Rv_bowtie_build.log
+    jobid: 10
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/H37Rv/H37Rv_indexed_ref.3.bt2
+    wildcards: genera=TB, sample=H37Rv
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:51 2024]
+Finished job 10.
+60 of 231 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:51 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR108430.fa
+    output: results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR108430_bowtie_build.log
+    jobid: 18
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR108430/ERR108430_indexed_ref.rev.2.bt2
+    wildcards: genera=TB, sample=ERR108430
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:53 2024]
+Finished job 18.
+61 of 231 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:53 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR234202.fa
+    output: results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR234202_bowtie_build.log
+    jobid: 24
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR234202/ERR234202_indexed_ref.2.bt2
+    wildcards: genera=TB, sample=ERR234202
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:55 2024]
+Finished job 24.
+62 of 231 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:55 2024]
+localrule bowtie_build:
+    input: seqs/TB/SRR1173640.fa
+    output: results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/SRR1173640_bowtie_build.log
+    jobid: 55
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/SRR1173640/SRR1173640_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=SRR1173640
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:52:57 2024]
+Finished job 55.
+63 of 231 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:57 2024]
+localrule split_bed:
+    input: TB.scheme.primer.bed
+    output: results/TB/primer_aln/fwd_primers.bed, results/TB/primer_aln/rev_primers.bed
+    jobid: 1
+    reason: Missing output files: results/TB/primer_aln/fwd_primers.bed, results/TB/primer_aln/rev_primers.bed
+    wildcards: genera=TB
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+[Fri Jul 19 12:52:57 2024]
+Finished job 1.
+64 of 231 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:52:57 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR144577.fa
+    output: results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR144577_bowtie_build.log
+    jobid: 32
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR144577/ERR144577_indexed_ref.1.bt2
+    wildcards: genera=TB, sample=ERR144577
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:53:00 2024]
+Finished job 32.
+65 of 231 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:53:00 2024]
+localrule bowtie_build:
+    input: seqs/TB/ERR550946.fa
+    output: results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.4.bt2, results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.rev.2.bt2
+    log: results/TB/primer_aln/logs/bowtie_build/ERR550946_bowtie_build.log
+    jobid: 63
+    reason: Missing output files: results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.2.bt2, results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.1.bt2, results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.3.bt2, results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.rev.1.bt2, results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.rev.2.bt2, results/TB/primer_aln/bowtie_index/ERR550946/ERR550946_indexed_ref.4.bt2
+    wildcards: genera=TB, sample=ERR550946
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/18612725655d9c5b047eb9e0a6e3ba3f_
+[Fri Jul 19 12:53:02 2024]
+Finished job 63.
+66 of 231 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 12:53:02 2024]
+localrule get_fasta:
+    input: results/TB/primer_aln/fwd_primers.bed, results/TB/primer_aln/rev_primers.bed
+    output: results/TB/primer_aln/fwd.scheme.primer.fasta, results/TB/primer_aln/rev.scheme.primer.fasta
+    jobid: 2
+    reason: Missing output files: results/TB/primer_aln/fwd.scheme.primer.fasta, results/TB/primer_aln/rev.scheme.primer.fasta; Input files updated by another job: results/TB/primer_aln/fwd_primers.bed, results/TB/primer_aln/rev_primers.bed
+    wildcards: genera=TB
+    resources: tmpdir=/var/folders/v8/xq20p7kj2kd8tzvx4xtdhv65d3pw82/T
+
+Activating conda environment: .snakemake/conda/169d717fd52820752328de356ba48fa2_
+[Fri Jul 19 12:53:02 2024]
+Error in rule get_fasta:
+    jobid: 2
+    input: results/TB/primer_aln/fwd_primers.bed, results/TB/primer_aln/rev_primers.bed
+    output: results/TB/primer_aln/fwd.scheme.primer.fasta, results/TB/primer_aln/rev.scheme.primer.fasta
+    conda-env: /Users/flg9/Desktop/Developer/grubaugh_lab/snakemake_workflows/GitHub/PGCOE_Bacseq/pipelines/make_pangenome/3_primer_alignment/.snakemake/conda/169d717fd52820752328de356ba48fa2_
+    shell:
+        
+        python /vast/palmer/scratch/turner/flg9/snakemake_workflows/pangenome_alignment/GitHub/pipelines/primer_alignment/scripts/get_indiv_fasta.py results/TB/primer_aln/fwd_primers.bed results/TB/primer_aln/rev_primers.bed results/TB/primer_aln/fwd.scheme.primer.fasta results/TB/primer_aln/rev.scheme.primer.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-07-19T124807.478385.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

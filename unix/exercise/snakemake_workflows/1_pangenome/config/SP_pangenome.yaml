@@ -1,0 +1,4 @@
+target: "Streptococcus"
+genera: "SP"
+ref: "seqs/czid_seqs/CS00030/contigs.fa"
+txt: "txt/SP_czidseqs.txt"
