@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Directory where the raw reads are stored
-raw_reads_dir="/vast/palmer/scratch/turner/flg9/snakemake_workflows/read_alignment/Github/seqs/amplicon/*"
+raw_reads_dir="/vast/palmer/scratch/turner/flg9/turner_lab/snakemake_workflows/1_assembly/seqs/*"
 
 # Output TSV file
-output_file="_______.tsv"
+output_file="beluga_raw_reads.tsv"
 
 # Write the header line
 echo -e "sample_id\tr1\tr2" > $output_file
