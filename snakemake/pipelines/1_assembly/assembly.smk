@@ -21,7 +21,8 @@ rule all:
         expand("results/{genera}/bowtie_index/{genera}_indexed_ref.rev.1.bt2", genera=config["genera"]),
         expand("results/{genera}/bowtie_index/{genera}_indexed_ref.rev.2.bt2", genera=config["genera"]),
         expand("results/{genera}/bowtie_align/{sample}/{sample}_host_removed_R1.fastq.gz", sample=SAMPLES, genera=config["genera"]),
-        expand("results/{genera}/bowtie_align/{sample}/{sample}_host_removed_R2.fastq.gz", sample=SAMPLES, genera=config["genera"])
+        expand("results/{genera}/bowtie_align/{sample}/{sample}_host_removed_R2.fastq.gz", sample=SAMPLES, genera=config["genera"]),
+        expand("results/{genera}/spades/{sample}/contigs.fasta", sample=SAMPLES, genera=config["genera"])
 
 rule fastqc:
     """
@@ -120,4 +121,24 @@ rule bowtie_align:
         --very-sensitive-local --un-conc-gz results/{wildcards.genera}/bowtie_align/{wildcards.sample}/{wildcards.sample}_host_removed > results/{wildcards.genera}/bowtie_align/{wildcards.sample}/{wildcards.sample}_mapped_and_unmapped.sam
         mv results/{wildcards.genera}/bowtie_align/{wildcards.sample}/{wildcards.sample}_host_removed.1 results/{wildcards.genera}/bowtie_align/{wildcards.sample}/{wildcards.sample}_host_removed_R1.fastq.gz
         mv results/{wildcards.genera}/bowtie_align/{wildcards.sample}/{wildcards.sample}_host_removed.2 results/{wildcards.genera}/bowtie_align/{wildcards.sample}/{wildcards.sample}_host_removed_R2.fastq.gz
+        """
+
+rule spades:
+    """
+    Assemble reads with SPAdes
+    """
+    input:
+        fwd = "results/{genera}/bowtie_align/{sample}/{sample}_host_removed_R1.fastq.gz",
+        rev = "results/{genera}/bowtie_align/{sample}/{sample}_host_removed_R2.fastq.gz"
+    output:
+        "results/{genera}/spades/{sample}/contigs.fasta"
+    params:
+        genera=config["genera"]
+    resources:
+        mem_mb=1000000,
+        threads=4
+    shell:
+        """
+        source activate /home/flg9/.conda/envs/spades
+        spades.py --meta --threads {resources.threads} -1 {input.fwd} -2 {input.rev} -o results/{params.genera}/spades/{wildcards.sample}
         """
