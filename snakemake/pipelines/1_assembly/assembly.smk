@@ -22,7 +22,9 @@ rule all:
         expand("results/{genera}/bowtie_index/{genera}_indexed_ref.rev.2.bt2", genera=config["genera"]),
         expand("results/{genera}/bowtie_align/{sample}/{sample}_host_removed_R1.fastq.gz", sample=SAMPLES, genera=config["genera"]),
         expand("results/{genera}/bowtie_align/{sample}/{sample}_host_removed_R2.fastq.gz", sample=SAMPLES, genera=config["genera"]),
-        expand("results/{genera}/spades/{sample}/contigs.fasta", sample=SAMPLES, genera=config["genera"])
+        expand("results/{genera}/spades/{sample}/contigs.fasta", sample=SAMPLES, genera=config["genera"]),
+        expand("results/{genera}/virsorter/{sample}/final-viral-combined.fa", sample=SAMPLES, genera=config["genera"]),
+        expand("results/{genera}/virsorter/{sample}/final-viral-score.tsv", sample=SAMPLES, genera=config["genera"])
 
 rule fastqc:
     """
@@ -141,4 +143,22 @@ rule spades:
         """
         source activate /home/flg9/.conda/envs/spades
         spades.py --meta --threads {resources.threads} -1 {input.fwd} -2 {input.rev} -o results/{params.genera}/spades/{wildcards.sample}
+        """
+
+rule virsorter:
+    """
+    Run VirSorter on SPAdes assembly
+    """
+    input:
+        "results/{genera}/spades/{sample}/contigs.fasta"
+    output:
+        "results/{genera}/virsorter/{sample}/final-viral-combined.fa",
+        "results/{genera}/virsorter/{sample}/final-viral-score.tsv"
+    params:
+        genera=config["genera"]
+    shell:
+        """
+        module unload miniconda
+        source activate /home/flg9/.conda/envs/vs2
+        virsorter run -w results/{params.genera}/virsorter/{wildcards.sample} -i {input} --min-length 1500 -j 4 all
         """
