@@ -2,3 +2,4 @@
 pipelines/1_assembly/input/
 pipelines/1_assembly/seqs/whale_feces_S170_R1_001.fastq.gz
 pipelines/1_assembly/seqs/whale_feces_S170_R2_001.fastq.gz
+snakemake/pipelines/1_assembly/db/
